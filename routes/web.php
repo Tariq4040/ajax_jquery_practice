@@ -20,4 +20,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('userinfo' , [UserInfoController::class , 'userinfo'])->name('userinfoPage');
+Route::get('/countryData' , [UserInfoController::class , 'countryData'])->name('countryData');
+Route::post('/stateData' , [UserInfoController::class , 'stateData'])->name('stateData');
+Route::post('/cityData' , [UserInfoController::class , 'cityData'])->name('cityData');
+
